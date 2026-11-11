@@ -18,7 +18,7 @@ permalink: /
 - **의료용 도구인가요?** 아닙니다. 학습 보조 도구입니다.
 
 ## 문의
-GitHub 이슈 https://github.com/changyoungduo/pendeck/issues (이메일은 추후 게시)
+GitHub 이슈 https://github.com/changyoungduo/pendeck-support/issues (이메일은 추후 게시)
 
 ---
 
@@ -28,4 +28,4 @@ GitHub 이슈 https://github.com/changyoungduo/pendeck/issues (이메일은 추�
 - **If the app opens to a recovery screen, your data is not lost.** Do not delete the app — that erases the data. Export a backup from that screen first, then send "Report a Problem".
 - **Back up regularly:** Settings → Backup & export → "Export backup", and keep the zip in Files, iCloud Drive or on a computer.
 - **FAQ:** Works offline, no account (only the optional AI feature needs a connection when an external service is used). Data stays on your iPad ([Privacy Policy](privacy/)). Export as backup zip, JSON, CSV or PDF with handwriting. Free, no purchases or subscriptions. A study aid, not for clinical decisions.
-- **Contact:** GitHub 이슈 https://github.com/changyoungduo/pendeck/issues (이메일은 추후 게시)
+- **Contact:** GitHub 이슈 https://github.com/changyoungduo/pendeck-support/issues (이메일은 추후 게시)
