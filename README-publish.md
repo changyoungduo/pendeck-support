@@ -1,10 +1,11 @@
-# 게시 절차 (창현이 실행 — 공개 저장소 생성은 AI 권한 밖)
+# 지원 사이트 게시
 
-특허 출원 접수 전에는 공개하지 않는다(DECISIONS 11/9). 접수 뒤 이 폴더에서:
+공개 저장소: https://github.com/changyoungduo/pendeck-support
 
-    gh repo create changyoungduo/pendeck --public --source=. --push --description "Pendeck 지원 · 개인정보처리방침"
-    gh api -X POST repos/changyoungduo/pendeck/pages -f build_type=legacy -f 'source[branch]=main' -f 'source[path]=/'
+- 지원: https://changyoungduo.github.io/pendeck-support/
+- 개인정보처리방침: https://changyoungduo.github.io/pendeck-support/privacy/
+- GitHub Pages: `main` 브랜치의 루트에서 게시한다.
 
-1~2분 뒤 https://changyoungduo.github.io/pendeck/ 와 https://changyoungduo.github.io/pendeck/privacy/ 확인.
-문의 채널은 임시로 GitHub 이슈다. 공개용 이메일이 정해지면 index.md·privacy.md의 "GitHub 이슈 …" 문구를 바꾸고 푸시한다.
-개발 레포 PR(docs/legal-ai-support-urls)의 SupportContact URL이 이 주소를 가리킨다.
+`index.md`·`privacy.md`를 수정하고 `main`에 푸시한 뒤 Pages 빌드와 두 주소를 확인한다.
+문의 채널은 GitHub 이슈다. 공개용 이메일이 정해지면 두 페이지의 문의 문구를 함께 바꾼다.
+앱 저장소 `changyoungduo/Pendeck`의 `SupportContact`와 App Store Connect의 지원·방침 주소도 위 주소를 사용한다.

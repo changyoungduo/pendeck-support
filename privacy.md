@@ -35,7 +35,7 @@ Pendeck은 iPad 안에서 동작하는 학습 앱입니다. 자료·필기·카�
 Pendeck은 학습 보조 도구입니다. 진단·치료·처방에 쓰지 마십시오.
 
 ## 개인정보 보호책임자
-손창현 · GitHub 이슈 https://github.com/changyoungduo/pendeck/issues (이메일은 추후 게시)
+손창현 · GitHub 이슈 https://github.com/changyoungduo/pendeck-support/issues (이메일은 추후 게시)
 
 ## 방침 변경
 이 방침이 바뀌면 이 페이지에 새 시행일과 함께 알립니다.
@@ -63,4 +63,4 @@ Effective: November 10, 2026
 
 **Not a medical device.** Pendeck is a learning aid, not a tool for diagnosis, treatment or prescribing.
 
-**Contact.** GitHub 이슈 https://github.com/changyoungduo/pendeck/issues (이메일은 추후 게시)
+**Contact.** GitHub 이슈 https://github.com/changyoungduo/pendeck-support/issues (이메일은 추후 게시)
