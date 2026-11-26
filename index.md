@@ -25,10 +25,20 @@ permalink: /
 ## 자주 묻는 질문
 
 - **인터넷 없이 되나요?** 됩니다. 가져오기, 필기, 가림으로 카드 만들기, 복습, 검색(필기 포함), 로컬 생성으로 문항
-  만들고 풀기, 백업이 모두 네트워크 없이 됩니다. 1.0에는 계정이 없습니다. 앱이 스스로 인터넷에 연결하는 곳은 선택
-  기능인 AI 보조(기본 꺼짐, iPadOS 27 이상) 하나뿐이며, 복습의 '문맥 넓히기'와 AI로 문항 만들기에 씁니다
-  ([개인정보처리방침](https://changyoungduo.github.io/pendeck-support/privacy/) 참고).
-- **내 데이터는 어디 있나요?** iPad 안에 있습니다. AI 보조를 켜지 않으면 아무것도 올리지 않습니다([개인정보처리방침](https://changyoungduo.github.io/pendeck-support/privacy/) 참고).
+  만들고 풀기, 백업이 모두 네트워크 없이 됩니다. 1.0은 계정이 필요 없습니다. 앱이 스스로 인터넷에 연결하는 곳은 둘 다
+  기본으로 꺼진 선택 기능 두 가지뿐입니다. 복습의 '문맥 넓히기'와 AI로 문항 만들기에 쓰는 AI 보조(iPadOS 27 이상)와, 사용자
+  본인의 iCloud를 쓰는 iCloud 동기화입니다([개인정보처리방침](https://changyoungduo.github.io/pendeck-support/privacy/) 참고).
+- **내 데이터는 어디 있나요?** iPad 안에 있습니다. iCloud 동기화를 켜면 사용자 본인의 iCloud 계정에도 사본이 있으며 저희는
+  볼 수 없습니다. 그 밖에는 AI 보조를 켜지 않으면 아무것도 올리지 않습니다([개인정보처리방침](https://changyoungduo.github.io/pendeck-support/privacy/) 참고).
+- **iCloud 동기화는 어떻게 쓰나요?** 선택 기능이며 기본으로 꺼져 있습니다. 각 iPad에서 같은 iCloud 계정으로 로그인하고
+  설정·백업 → 'iCloud 동기화'를 켠 뒤 앱을 다시 엽니다. '마지막 동기화 확인'과 '업로드 대기 N개'로 상태를 보며, 화면에 열린
+  자료의 변경은 그 자료를 닫으면 반영됩니다. 끄면 iPad의 자료와 iCloud의 사본이 둘 다 남습니다. 그 뒤 '모든 데이터 삭제'는
+  이 기기만 지웁니다. iCloud 사본을 지우려면 모든 기기에서 동기화를 끈 뒤 iPad 설정 → 사용자 이름 → iCloud → 저장 공간
+  관리 → Pendeck에서 지웁니다. 백업을 복원하면 그 iPad의 동기화가 꺼집니다.
+- **iCloud에서 로그아웃했더니 자료가 없어졌어요.** iCloud에서 로그아웃하거나 iPad 설정에서 Pendeck의 iCloud 사용을 끄면
+  동기화된 자료가 그 iPad에서 사라지고, iCloud의 사본은 남습니다. 같은 계정으로 다시 로그인하고 앱을 열면 돌아옵니다.
+  로그아웃 직전의 변경은 올라가지 않았을 수 있으니 먼저 백업을 만들어 두세요. 동기화를 멈추고 iPad에 모두 남기려면 앱 안의
+  스위치를 끕니다.
 - **PDF로 문제는 어디서 만드나요?** PDF를 열고 더보기 → '이 PDF로 문제 풀기'를 누릅니다. 쪽과 유형(5지선다, 단답형,
   서술형, 혼합)을 골라 문항을 만들면, 문항마다 해설과 근거 쪽 링크가 나옵니다. 문항은 자료마다 iPad에 저장되며 백업
   zip에 들어갑니다. 서술형 답은 모범답안과 비교해 직접 평가합니다. 단답형은 답과 맞으면 정답으로 표시되고, 그렇지
@@ -37,8 +47,9 @@ permalink: /
   스스로 만들며, 아무것도 보내지 않습니다. 'AI 출제'에는 iPadOS 27 이상과 켜진 AI 보조가 필요합니다. iPadOS 26에서는
   로컬 출제만 쓸 수 있습니다.
 - **AI로 문항을 만들면 무엇을 보내나요?** 고른 쪽의 글과 그 쪽의 메모·글상자를, 정답을 가리지 않은 채 저희 중계 서버와
-  국내 게이트웨이 BizRouter를 거쳐 Anthropic으로 보냅니다. 중계 서버는 사본을 남기지 않고, BizRouter는 저희가 쓰는
-  설정에서 본문을 저장하지 않는다고, Anthropic은 기본적으로 30일 안에 지운다고 밝히고 있습니다. 보내기 전에 앱이 쪽과 글을 보여 주고 한 번 더 묻습니다('이 범위 전송에 동의하고 생성'). 쪽 이미지, 필기
+  국내 게이트웨이 BizRouter를 거쳐 Anthropic의 Claude 모델(Anthropic API 또는 AWS의 Amazon Bedrock)로 보냅니다. 중계 서버는
+  사본을 남기지 않고, BizRouter는 저희가 쓰는 설정에서 본문을 저장하지 않는다고, Anthropic은 API로 받은 요청을 기본적으로
+  30일 안에 지운다고 밝히고 있습니다(Amazon Bedrock을 거치면 AWS의 정책이 적용됩니다). 보내기 전에 앱이 쪽과 글을 보여 주고 한 번 더 묻습니다('이 범위 전송에 동의하고 생성'). 쪽 이미지, 필기
   획, iPad 안에서 그 획을 읽은 글자, 자료 이름은 iPad에 남습니다. PDF의 글에 이미 들어 있는 필기는 선택한 다른 글과
   함께 갑니다. 기기마다 하루 12번까지 요청할 수 있습니다. '문맥 넓히기'는 그 카드가 있는 쪽의 글을 보냅니다.
   [개인정보처리방침](https://changyoungduo.github.io/pendeck-support/privacy/)을 보세요.
@@ -102,10 +113,22 @@ Effective: November 26, 2026
 ## Common questions
 
 - **Does it work offline?** Yes. Import, handwriting, masking into cards, review, search (handwriting
-  included), making and answering questions with local generation, and backup all work without a network. Version 1.0 has no account.
-  The only part of the app that connects to the internet itself is the optional AI Assist (off by default,
-  iPadOS 27 or later), used by "Widen context" in review and by making questions with AI (see the [privacy policy](https://changyoungduo.github.io/pendeck-support/privacy/)).
-- **Where is my data?** On your iPad. Nothing is uploaded unless you turn on AI Assist (see the [privacy policy](https://changyoungduo.github.io/pendeck-support/privacy/)).
+  included), making and answering questions with local generation, and backup all work without a network. Version 1.0 needs no account.
+  The app connects to the internet itself only for two optional features, both off by default: AI Assist
+  (iPadOS 27 or later), used by "Widen context" in review and by making questions with AI, and iCloud Sync, which
+  uses your own iCloud (see the [privacy policy](https://changyoungduo.github.io/pendeck-support/privacy/)).
+- **Where is my data?** On your iPad. With iCloud Sync on, a copy is also in your own iCloud account, which we
+  cannot see. Nothing else is uploaded unless you turn on AI Assist (see the [privacy policy](https://changyoungduo.github.io/pendeck-support/privacy/)).
+- **How do I use iCloud Sync?** It is optional and off by default. Sign in to the same iCloud account on each
+  iPad, turn on Settings & Backup → "iCloud Sync" on each, and reopen the app. "Last Sync Check" and "uploads
+  pending" show its state; changes to a material that is open on screen arrive when you close it. Turning it off
+  keeps the data on the iPad and the copy in iCloud. "Delete all data" then erases only this device; to delete the
+  iCloud copy, turn sync off on every device, then use the iPad's Settings → your name → iCloud → Manage Storage →
+  Pendeck. Restoring a backup turns sync off on that iPad.
+- **I signed out of iCloud and my materials are gone.** Signing out of iCloud, or turning off iCloud for Pendeck in
+  the iPad's Settings, removes the synced data from that iPad; the copy in iCloud stays. Sign in to the same account
+  again and open the app to get it back. Changes made just before signing out may not have been uploaded, so make a
+  backup first; to stop syncing and keep everything on the iPad, turn off the switch in the app instead.
 - **Where do I make questions from a PDF?** Open the PDF, then More → "Practice with this PDF". Pick the
   pages and a type (5 choices, short answer, written answer or mixed) and make questions; each one shows an
   explanation and a link to its source page. Questions are kept per material on the iPad and are part of
@@ -115,9 +138,10 @@ Effective: November 26, 2026
   questions by itself from your masks and from lines written as "term: definition", and nothing is sent.
   "AI questions" needs iPadOS 27 or later and AI Assist turned on; on iPadOS 26 only local questions are available.
 - **What does making questions with AI send?** The text of the pages you chose and the notes and text
-  boxes on them, without masking answers, to Anthropic through our relay server and the Korean gateway
-  BizRouter. Our relay keeps no copy, BizRouter states that it does not store request text with the setting we use,
-  and Anthropic states that it deletes requests within 30 days by default. Before anything is sent the app shows the pages
+  boxes on them, without masking answers, to Anthropic's Claude models (through Anthropic's API or Amazon Bedrock
+  from AWS) via our relay server and the Korean gateway BizRouter. Our relay keeps no copy, BizRouter states that it
+  does not store request text with the setting we use, and through its API Anthropic states that it deletes requests
+  within 30 days by default (through Amazon Bedrock, AWS's policies apply). Before anything is sent the app shows the pages
   and text and asks again ("Agree to send this range and make questions"). Page images, ink strokes,
   text recognized from those strokes on the iPad, and material names stay on the iPad. Handwriting already
   embedded in a PDF’s text goes with the rest of the selected text. Up to 12 requests per device per day.
