@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Pendeck 개인정보처리방침
 
-시행일: 2026년 11월 26일
+시행일: 2026년 11월 28일
 
 ## 요약
 
@@ -41,10 +41,7 @@ Pendeck은 **iPad 안에서 동작하는(로컬 우선)** 학습 앱입니다. �
   저장소에 둡니다. 원본의 암호 보호와 복사·인쇄 제한은 이 사본에 적용되지 않습니다. 입력한 암호는 저장하거나 기록하지
   않고 iPad 밖으로 보내지 않습니다.
 - **카메라(문서 스캔):** 쪽을 스캔하는 동안에만 씁니다. 스캔 결과는 앱 안의 PDF가 되고 사진 보관함에 저장하지 않습니다.
-- **사진(쪽에 넣는 이미지):** 앱은 사진 보관함에 접근하지 않으며 다른 사진을 볼 수 없습니다. 이미지를 넣을 때 시스템
-  사진 선택기가 사용자가 고른 사진만 앱에 넘겨 줍니다. 앱은 메타데이터(위치·기기·촬영 시각)를 뺀 축소본을 iPad의 앱
-  저장소에 두고, 사진 보관함에 아무것도 저장하지 않으며, 사진을 iPad 밖으로 보내지 않습니다. 다른 내용과 마찬가지로
-  사용자가 만든 내보내기나 백업에 들어갈 때만 iPad 밖으로 나갑니다.
+- **사진(쪽에 넣는 이미지)** — 쪽에 사진을 넣을 때 시스템 사진 선택기가 사용자가 고른 사진만 Pendeck에 넘겨 줍니다. Pendeck은 위치·촬영 시각·촬영 기기 등의 원본 메타데이터를 빼고 이미지 사본을 만들어 iPad의 앱 저장소에 보관합니다. 큰 이미지는 크기를 줄입니다. 다른 사진에 접근하거나 사진 보관함에 저장하지 않습니다. 사용자가 iCloud 동기화를 켜면 이 사본도 본인의 비공개 iCloud 저장 공간에 동기화됩니다. 사진이 들어 있는 자료를 직접 내보내거나 공유할 때, 또는 해당 자료가 앱에서 만든 백업이나 iPadOS 기기 백업에 담길 때에도 이미지 사본이 포함될 수 있습니다. AI 보조는 이 이미지 파일을 중계 서버나 AI 제공사로 보내지 않습니다.
 - **공유 확장:** 다른 앱에서 이 앱으로 공유한 파일은 iPad의 앱 저장소로 복사되고, 다음에 앱을 열 때 가져옵니다.
 - **복습 알림(선택, 기본 꺼짐):** 설정에서 켤 때 알림 권한을 묻고(처음 실행할 때는 묻지 않습니다), 매일 알림을 최대
   7일 치까지 iPad 안에서 예약합니다. 알림에는 복습할 카드 수만 나오고 카드·자료·과목 이름은 나오지 않습니다. 복습
@@ -139,8 +136,7 @@ Pendeck은 **iPad 안에서 동작하는(로컬 우선)** 학습 앱입니다. �
 - **아동:** AI 보조는 만 14세 이상 사용자를 위한 기능이며, 동의 화면에서 이를 확인합니다.
 - **하루 한도:** '문맥 넓히기' 요청은 기기마다 하루 50번까지이며, 넘으면 '문맥 넓히기'는 AI 없이 동작합니다. 문항
   만들기는 따로 셉니다. 기기마다 하루 12번까지 요청하며(요청 한 번에 문항 최대 5개), 넘으면 나머지는 다음 날까지
-  기다립니다. 둘 다 iPad 안에서 셉니다. 저희 중계 서버가 쓰는 BizRouter 키에는 모든 AI 요청의 하루 총액 한도도 있어,
-  닿으면 앱은 '거부'에 적은 것처럼 AI 없이 동작합니다.
+  기다립니다. 둘 다 iPad 안에서 셉니다. 중계 서버의 서비스 한도에 닿아 AI 요청을 더 보낼 수 없으면 앱은 '거부'에 적은 것처럼 AI 없이 동작합니다.
 - **저희 중계 서버가 보관하는 것:** 없습니다. 저희 중계 프로그램은 요청과 응답을 전달할 뿐 이를 저장하거나 기록하지
   않으며, IP 주소와 앱 정보도 저장하거나 기록하지 않습니다. IP 주소는 1분 동안의 요청 수를 세는 데만 씁니다(위 참고).
 - **BizRouter가 보관하는 것:** 저희는 BizRouter의 「감사 로그 저장」을 꺼 두었습니다. BizRouter는 이 설정을 끄면 요청과
@@ -158,8 +154,11 @@ Pendeck은 **iPad 안에서 동작하는(로컬 우선)** 학습 앱입니다. �
   [API 데이터 보관](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention)).
   BizRouter의 데이터 정책도 Anthropic이 입력과 출력을 받거나 만든 뒤 30일 안에 삭제한다고(정책 위반으로 표시되면 최대
   2년) 적고 있습니다. 저희 중계 서버는 요청을 받아 전달할 뿐 사본을 보관하지 않습니다.
-- **BizRouter가 Amazon Bedrock을 쓸 때:** 요청은 위 Anthropic의 보관 정책이 아니라 AWS의 Amazon Bedrock 정책에 따라
-  처리됩니다.
+- **BizRouter가 Amazon Bedrock을 쓸 때:** AWS의 [Bedrock 데이터 보관](https://docs.aws.amazon.com/bedrock/latest/userguide/data-retention.html) 기준이 적용됩니다.
+  요청과 응답을 보관하는지, 얼마나 보관하는지는 모델·API와 해당 리전의 AWS 계정 또는 프로젝트에 적용되는 보관 설정에
+  따라 달라집니다. AWS는 일부 모델의 정책에 따라 안전 검토나 남용 방지를 위해 요청과 응답을 보관할 수 있습니다.
+  [모델 호출 로깅](https://docs.aws.amazon.com/bedrock/latest/userguide/model-invocation-logging.html)은 별도 설정입니다. 로깅을 켜면 지원되는 호출의 요청·응답 본문과 메타데이터가 Amazon CloudWatch Logs나 Amazon S3에 기록될 수 있습니다.
+  그 기록의 보관과 삭제는 기록이 저장된 곳에 적용되는 [CloudWatch Logs 보관 설정](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html) 또는 [S3 수명 주기 규칙](https://docs.aws.amazon.com/AmazonS3/latest/userguide/deleting-log-files-lifecycle.html)에 따릅니다.
 - **사례 기록(선택, 기본 꺼짐):** 설정 → AI 보조 → '사례 기록 남기기'를 켜면, '문맥 넓히기' AI 요청마다(문항 만들기는
   제외) 보낸 글, 가린 정답, 앱이 고른 범위, Claude가 고른 범위, 모델 설정과 걸린 시간을 iPad의 파일 하나에 둡니다(최신
   1,000개). 이 파일에는 자료 이름·쪽 번호·식별자·시각이 없습니다. 앱은 이 파일을 어디로도 보내지 않으며, 사용자가 공유
@@ -191,7 +190,7 @@ AI 보조를 켠 경우에만 해당합니다. AI 보조를 켜지 않으면 위
 | 이전 시기와 방법 | AI 보조를 켠 상태에서 '문맥 넓히기'를 누르거나 AI로 문항을 만들 때마다 암호화된 연결(HTTPS)로 전송 | 같은 때, BizRouter(서울)를 거쳐 암호화된 연결(HTTPS)로 전송 |
 | 이전되는 항목 | 위 'AI 기능'의 보내는 것: '문맥 넓히기'의 후보 범위 글(그 쪽의 글 전체, 정답은 가린 채)과 가린 정답의 글자, 문항 만들기의 고른 쪽 글·메모·글상자 글·이미 만든 문항·문항 유형과 개수와 목표 점수, 고정된 지시문, 모델 설정, 앱 식별자·앱 버전·iPadOS 버전(User-Agent), 앱에 든 고정 값, IP 주소 | 왼쪽 항목 가운데 글, 지시문, 모델 설정(IP 주소, User-Agent, 고정 값은 넘기지 않음) |
 | 이용 목적 | 요청을 BizRouter로 전달 | '문맥 넓히기'가 보여 줄 문맥 범위 고르기, 고른 쪽의 글로 문항 쓰기 |
-| 보유·이용 기간 | 보관하지 않음(전달하는 동안만 처리, IP 주소는 1분 동안의 요청 수 제한에만 잠깐 씀) | Anthropic API를 거치면 Anthropic 정책에 따라 API 입력과 출력은 기본적으로 30일 안에 삭제(보관 기간이 더 긴 서비스, 별도 계약, 이용 정책 집행이나 법적 요구가 있으면 달라질 수 있고, 자동 안전 시스템이 표시한 요청은 입력과 출력을 최대 2년, 분류 점수를 최대 7년 보관). Amazon Bedrock을 거치면 AWS의 Amazon Bedrock 정책에 따름 |
+| 보유·이용 기간 | 보관하지 않음(전달하는 동안만 처리, IP 주소는 1분 동안의 요청 수 제한에만 잠깐 씀) | Anthropic API를 거치면 Anthropic 정책에 따라 API 입력과 출력은 기본적으로 30일 안에 삭제(보관 기간이 더 긴 서비스, 별도 계약, 이용 정책 집행이나 법적 요구가 있으면 달라질 수 있고, 자동 안전 시스템이 표시한 요청은 입력과 출력을 최대 2년, 분류 점수를 최대 7년 보관). Amazon Bedrock을 거치면 위 'BizRouter가 Amazon Bedrock을 쓸 때'에 설명한 보관·삭제 기준에 따름 |
 | 거부 방법과 효과 | AI 보조를 켜지 않거나 설정에서 끄면 다음 요청부터 전송하지 않습니다. 거부해도 다른 기능은 모두 그대로 쓸 수 있고, '문맥 넓히기'는 AI 없이 한 단계씩 넓어지며, 문항은 로컬 생성으로 만들 수 있습니다 | 왼쪽과 같음 |
 
 BizRouter(주식회사 AI3)는 국내에서 처리하며, 저희가 끈 「감사 로그 저장」 설정에서는 본문을 저장하지 않는다고 밝히고
@@ -210,9 +209,8 @@ BizRouter(주식회사 AI3)는 국내에서 처리하며, 저희가 끈 「감�
   필기·글상자·이미지가 들어간 PDF(모든 쪽, 이 쪽만, 쪽 범위)나 필기 없는 원본 PDF로 내보냅니다.
 - **AI 보조:** 설정 → AI 보조의 스위치를 끄면 다음 요청부터 아무것도 보내지 않습니다. '모든 데이터 삭제'를 하면 동의
   기록도 지워져, 다음에 켤 때 다시 묻습니다.
-- **이미 보낸 AI 요청:** 앱은 요청에 사용자나 기기를 알아볼 식별자를 넣지 않으므로 저희와 BizRouter·Anthropic·AWS는 특정
-  사용자의 요청을 찾아 지울 수 없습니다. 보낸 글은 위 'BizRouter가 보관하는 것'·'Anthropic이 보관하는 것'에 적은 기간이
-  지나면(Amazon Bedrock을 거쳤다면 AWS의 정책에 따라) 지워집니다. 삭제나 동의 철회에 관해 궁금한 점은 pendeck.support@gmail.com으로 보내 주세요.
+- **이미 보낸 AI 요청:** 이미 전송한 요청의 사본에는 해당 처리 경로와 서비스의 보관·삭제 정책이 적용됩니다. 앱은 요청에 사용자나 기기 식별자를 넣지 않습니다. 특정 요청의 확인이나 삭제를
+  원하시면 pendeck.support@gmail.com으로 문의해 주세요. 제공 가능한 요청 정보와 처리 서비스의 정책을 확인해 가능한 조치를 안내합니다.
 - **알림:** 설정 → 복습 일정 → '복습 알림'을 끄면 예약된 알림도 지워집니다. iOS 설정 → 알림에서도 앱의 알림을 끌 수
   있습니다.
 - **자료 삭제:** 지운 자료는 사이드바의 '최근 삭제'로 옮겨집니다. 그곳에서 '영구 삭제'나 '모두 비우기'를 누르면 바로
@@ -243,7 +241,7 @@ Pendeck은 **학습 보조 도구**이며 진단·치료·처방에 쓰는 도�
 
 # Pendeck Privacy Policy
 
-Effective: November 26, 2026
+Effective: November 28, 2026
 
 ## Summary
 
@@ -287,11 +285,7 @@ Your own device backup may also include app data.
   is not saved or logged and never leaves the iPad.
 - **Camera (document scan):** used only while you scan pages. The scan becomes a PDF in the app and
   is not saved to your photo library.
-- **Photos (images on a page):** the app has no access to your photo library and cannot see your other
-  photos. When you insert an image, the system photo picker hands the app only the photo you chose. The
-  app keeps a reduced copy without its metadata (location, device, capture time) in its own storage on the
-  iPad, never saves anything to your photo library, and never sends the photo off the iPad; like your other
-  content, it leaves the iPad only in an export or backup you make.
+- **Photos added to a page** — When you add a photo to a page, the system photo picker gives Pendeck only the photo you select. Pendeck saves an image copy in its own storage on your iPad after removing the original metadata, such as location, capture time, and camera information. Large images are resized. Pendeck cannot access your other photos and does not save anything to your photo library. If you turn on iCloud Sync, the image copy also syncs to your private iCloud storage. The image copy may also be included when you choose to export or share the material, or when the material is included in an app or device backup. AI Assist does not send these image files to our relay or AI providers.
 - **Share extension:** files you share to the app from another app are copied into the app's own
   storage on the iPad and imported the next time the app opens.
 - **Review reminders (optional, off by default):** if you turn them on in Settings, the app asks for
@@ -414,9 +408,7 @@ With it off, or without a network, the rest of the app works the same, without A
 - **Children:** AI Assist is for users 14 or older; the consent screen asks you to confirm this.
 - **Daily limit:** up to 50 "Widen context" requests per device per day; past that, "Widen context" works
   without AI. Making questions is counted separately: up to 12 requests per device per day (one request
-  writes up to 5 questions); past that, the rest waits for the next day. Both are counted on the iPad. The
-  BizRouter key our relay server uses also has a daily limit on the total cost of all AI requests; once it is
-  reached, the app works without AI as described under "Declining".
+  writes up to 5 questions); past that, the rest waits for the next day. Both are counted on the iPad. If our relay reaches a service limit and cannot send another AI request, the app works without AI as described under "Declining".
 - **What our relay server keeps:** nothing. Our relay program passes each request and answer through and does
   not store or log them, your IP address or the app details. The IP address is used only to count requests per
   minute (see above).
@@ -437,8 +429,13 @@ With it off, or without a network, the rest of the app works the same, without A
   [API data retention](https://platform.claude.com/docs/en/manage-claude/api-and-data-retention)).
   BizRouter's data policy gives the same 30 days from receipt or generation (up to two years when flagged for a
   policy violation). Our relay passes each request through and keeps no copy.
-- **When BizRouter uses Amazon Bedrock:** the request is handled by AWS under its policies for Amazon Bedrock
-  rather than under Anthropic's retention above.
+- **When BizRouter uses Amazon Bedrock:** AWS applies its [Bedrock data retention](https://docs.aws.amazon.com/bedrock/latest/userguide/data-retention.html) rules.
+  Whether and how long AWS retains requests and responses depends on the model, API, and the effective AWS account or
+  project retention setting for the applicable Region. Under some model policies, AWS may retain requests and responses
+  for safety review or abuse prevention. [Model invocation logging](https://docs.aws.amazon.com/bedrock/latest/userguide/model-invocation-logging.html) is a separate setting.
+  If enabled for supported calls, it can record request and response contents and metadata in Amazon CloudWatch Logs or
+  Amazon S3. Retention and deletion of those records follow the applicable [CloudWatch Logs retention settings](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html) or
+  [S3 Lifecycle rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/deleting-log-files-lifecycle.html) for the destination.
 - **Case records (optional, off by default):** Settings → AI Assist → "Keep case records" keeps, for each "Widen
   context" AI request (not for making questions), the text that was sent, the masked answer, the range the app chose, the range Claude chose, the
   model settings and the timing, in one file on the iPad (the newest 1,000). The file holds no material
@@ -464,10 +461,10 @@ With it off, or without a network, the rest of the app works the same, without A
   range), or as the original PDF without your handwriting.
 - **AI Assist:** turn off the switch in Settings → AI Assist; nothing is sent from the next request. "Delete all data"
   also forgets that you agreed, so the app asks again the next time you turn it on.
-- **Requests already sent:** requests carry no identifier of you or your device, so neither we nor BizRouter,
-  Anthropic or AWS can find and delete a particular user's requests. The text sent is deleted after the periods in
-  "What BizRouter keeps" and "What Anthropic keeps" (or under AWS's Amazon Bedrock policies). For questions about deletion or withdrawing consent, write to
-  pendeck.support@gmail.com.
+- **Requests already sent:** Copies of prior requests are subject to the retention and deletion policies of the
+  services that processed them. Pendeck does not include user or device identifiers in its requests. To ask about
+  locating or deleting a particular request, contact pendeck.support@gmail.com. We will check the available
+  request details and the applicable provider policies and explain what can be done.
 - **Reminders:** Settings → Review schedule → "Review reminders" turns them off and removes the scheduled
   ones; iOS Settings → Notifications can also turn off the app's notifications.
 - **Delete a material:** it moves to Recently Deleted in the sidebar. "Delete Permanently" or "Empty Recently
